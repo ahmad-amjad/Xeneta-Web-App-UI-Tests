@@ -17,12 +17,11 @@
 1. Open visual Studio Code and install following extensions:
 2. C# by Microsoft
 3. .Net Core Test Explorer by Jun Han
-4. Test Explorer UI (Should get installed automatically when above extension is installed)
-5. Restart Visual Studio Code if Prompted
-6. Click File then click Open and select Solution folder named XenetaWebApp.Tests
-7. Press Control + Shift + B to build the solution
-8. Go to Test Explorer on left menu to view all features and their tests
-9. You can run all tests or a features tests or a single test
+4. Restart Visual Studio Code if Prompted
+5. Click File then click Open and select Solution folder named XenetaWebApp.Tests
+6. Press Control + Shift + B to build the solution
+7. Go to Test Explorer on left menu to view all features and their tests
+8. You can run all tests or a features tests or a single test
 
 # Project Structure/Flow
 1. To see tests structure go to Solution Explorer
