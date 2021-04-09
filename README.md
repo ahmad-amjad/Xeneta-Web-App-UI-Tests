@@ -20,7 +20,7 @@
 3. .Net Core Test Explorer by Jun Han
 4. Restart Visual Studio Code if Prompted
 5. Click File then click Open and select Solution folder named XenetaWebApp.Tests
-6. Press Control + Shift + B to build the solution
+6. Press Control + Shift + B and select build from search results to build the solution
 7. Go to Test Explorer on left menu to view all features and their tests
 8. You can run all tests or a features tests or a single test
 
