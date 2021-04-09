@@ -28,4 +28,4 @@
 2. The tests are defined in feature files in Feature folder
 3. Feature files map to corresponding step definitions in Steps folder. These steps call test functions in repective page classes
 4. Page classes in the Pages folder use selenium to locate elements, perform actions and return properties
-5. Browser initialization and dispose is done in WebDriverHooks.cs in Hooks folder
+5. Browser initialization and disposal is done in WebDriverHooks.cs in Hooks folder
