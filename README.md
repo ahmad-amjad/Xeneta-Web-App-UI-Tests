@@ -2,6 +2,7 @@
 1. Automated UI Tests for some features of Xeneta's Website using .Net Core, Selenium, Specflow and Nunit
 2. Runs with current chrome version: 89.0.4389.114 
 3. Selenium.WebDriver.ChromeDriver package can be updated for future verisons via Nuget Manager in Visual Studio 2019
+4. Target framework version for the project is .Net Core 2.1
 
 # Running tests using Visual Studio 2019
 1. Open XenetaWebApp.Tests.sln file from visual studio
