@@ -2,10 +2,10 @@
 Discussed in detail in document named **_'Functional Tests and Automation Criteria_'** within this repository
 
 # Project Overview
-1. Automated UI Tests for some features of Xeneta's Website using .Net Core, Selenium, Specflow and Nunit
-2. Runs with current chrome version: 89.0.4389.114 
-3. Selenium.WebDriver.ChromeDriver package can be updated for future chrome verisons via Nuget Manager in Visual Studio 2019
-4. Target framework version for the project is .Net Core 2.1
+* Automated UI Tests for some features of Xeneta's Website using .Net Core, Selenium, Specflow and Nunit
+* Runs with current chrome version: 89.0.4389.114 
+* Selenium.WebDriver.ChromeDriver package can be updated for future chrome verisons via Nuget Manager in Visual Studio 2019
+* Target framework version for the project is .Net Core 2.1
 
 # Project Structure/Flow
 1. The tests are defined using Gherkin Syntax in *Feature* files (extenseion: .features) located in *Features* folder
