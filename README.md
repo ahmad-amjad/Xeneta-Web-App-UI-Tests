@@ -8,13 +8,13 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 4. Target framework version for the project is .Net Core 2.1
 
 # Project Structure/Flow
-1. The tests are defined using Gherkin Syntax in feature files (extenseion: .features) located in *Features* folder
+1. The tests are defined using Gherkin Syntax in *Feature* files (extenseion: .features) located in *Features* folder
 2. Feature files contain *Scnarios* which are basically the tests
 3. The Scenarios have steps in Gherkin Syntax (Give, When, Then etc)
 4. The scenario steps map to corresponding *Step Definition* files located in *Steps* folder
 5. Pressing F12 on a scenario step will open its step definition method
 6. The step definition methods call functions in repective *Page Object* classes
-7. Page Object classes in the Pages folder use selenium to locate elements, perform actions and return properties
+7. Page Object classes in the *Pages* folder use selenium to locate elements, perform actions and return properties
 8. Browser initialization and disposal is done in *WebDriverHooks.cs* in *Hooks* folder
 
 # Open and Run Project
