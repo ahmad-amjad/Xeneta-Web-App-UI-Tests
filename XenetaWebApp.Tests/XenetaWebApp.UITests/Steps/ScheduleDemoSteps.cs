@@ -12,8 +12,13 @@ namespace XenetaWebApp.UITests.Steps
     public class ScheduleDemoSteps
     {
         private WebPages Pages;
+        private ScenarioContext ScenarioContext;
 
-        public ScheduleDemoSteps(WebPages pages) => Pages = pages;
+        public ScheduleDemoSteps(WebPages pages, ScenarioContext scenarioContext)
+        {
+            Pages = pages;
+            ScenarioContext = scenarioContext;
+        }
 
         [Given(@"I am on the demo booking screen")]
         public void GivenIAmOnTheDemoBookingScreen()
@@ -75,18 +80,19 @@ namespace XenetaWebApp.UITests.Steps
         public void GivenISelectThatTheCompanyIsA(string companyType)
         {
             Pages.DemoPage.CompanyType = companyType;
+            ScenarioContext["CompanyType"] = companyType;
         }
 
         [Given(@"I select that the global number of TEUs shipped annually is '(.*)'")]
         public void GivenISelectThatTheGlobalNumberOfTEUsShippedAnnuallyIs(string teusShippedAnnually)
         {
-            Pages.DemoPage.TeusShippedAnnually = teusShippedAnnually;
+            Pages.DemoPage.SetTeusShippedAnnually(ScenarioContext["CompanyType"].ToString(), teusShippedAnnually);
         }
 
         [Given(@"I select that the annual air freight ton is '(.*)'")]
         public void GivenISelectThatTheAnnualAirFreightTonIs(string annualAirFreightRate)
         {
-            Pages.DemoPage.AnnualAirFreightRate = annualAirFreightRate;
+            Pages.DemoPage.SetAnnualAirFreightRate(ScenarioContext["CompanyType"].ToString(), annualAirFreightRate);
         }
 
         [Given(@"I agree to the privacy policy of Xeneta")]

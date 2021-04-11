@@ -17,6 +17,8 @@ namespace XenetaWebApp.UITests.Pages
         private const string DemoBookingConfirmationMessageTextPartOne = "Thank you for your interest in Xeneta!";
         private const string DemoBookingConfirmationMessageTextPartTwo = "and set your date and time on the calendar. Happy shipping!";
 
+        public DemoPage(RemoteWebDriver browser) => Browser = browser;
+
         private IWebElement AcceptCookiesButton => Browser.FindElementById("hs-eu-confirmation-button");
 
         private IWebElement WatchVideosButton => Browser.FindElementByLinkText("WATCH VIDEOS");
@@ -60,8 +62,6 @@ namespace XenetaWebApp.UITests.Pages
         private IWebElement DemoBookingConfirmationMessagePartOneElement => Browser.FindElementByXPath("//div[contains(@class, 'submitted-message')]/p[contains(text(), '" + DemoBookingConfirmationMessageTextPartOne + "')]");
 
         private IWebElement DemoBookingConfirmationMessagePartTwoElement => Browser.FindElementByXPath("//div[contains(@class, 'submitted-message')]//p[contains(text(), '" + DemoBookingConfirmationMessageTextPartTwo + "')]");
-
-        public DemoPage(RemoteWebDriver browser) => Browser = browser;
 
         public void NavigateTo()
         {
@@ -178,6 +178,26 @@ namespace XenetaWebApp.UITests.Pages
             }
         }
 
+        public string PrivacyPolicyRequiredFieldValidationMessage => PrivacyPolicyRequiredFieldValidationLabel.Text;
+
+        public string DemoBookingConfirmationMessage => DemoBookingConfirmationMessagePartOneElement.Text + ' ' + DemoBookingConfirmationMessagePartTwoElement.Text;
+
+        public void SetTeusShippedAnnually(string companyType, string teusShippedAnnually)
+        {
+            if (companyType is "Shipper/BCO" || companyType is "Freight Forwarder")
+            {
+                TeusShippedAnnually = teusShippedAnnually;
+            }
+        }
+
+        public void SetAnnualAirFreightRate(string companyType, string annualAirFreightRate)
+        {
+            if (companyType is "Shipper/BCO")
+            {
+                AnnualAirFreightRate = annualAirFreightRate;
+            }
+        }
+
         public void ViewPrivacyPolicy() => PrivacyPolicyLink.Click();
 
         public void AcceptPrivacyPolicy()
@@ -199,10 +219,6 @@ namespace XenetaWebApp.UITests.Pages
         public void ScheduleDemo() => SubmitApplicationButton.Click();
 
         public void SignUpForWebinar() => SubmitApplicationButton.Click();
-
-        public string PrivacyPolicyRequiredFieldValidationMessage => PrivacyPolicyRequiredFieldValidationLabel.Text;
-
-        public string DemoBookingConfirmationMessage => DemoBookingConfirmationMessagePartOneElement.Text + ' ' + DemoBookingConfirmationMessagePartTwoElement.Text;
 
         public void OpenDemoVideos() => WatchVideosButton.Click();
     }
