@@ -59,7 +59,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 6. Build the solution:
     * For Windows: Ctrl + Shift + B
     * For Mac: Cmd + B
-7. Use Solution Explorer to view the project files
+7. Use *Solution* Explorer tab on left menu to view the project files
 8. The tests are structured as:
     * Feature Files contain Scenarios(tests) -> Scenarios contain Steps -> Steps map to Step Definition methods -> Step Definition methods use Page Object classes
 9. Open *Test* Explorer tab on left menu and reload tests. Do this after evey build
