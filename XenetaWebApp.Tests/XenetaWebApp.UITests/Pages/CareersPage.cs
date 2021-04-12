@@ -21,6 +21,8 @@ namespace XenetaWebApp.UITests.Pages
 
         private IWebElement JobTitleHeading => Browser.FindElementByXPath("//div[@class='accordion']//h4[contains(text(), '" + CareersPageTestData.JobTitle + "')]");
 
+        private IWebElement JobDetailsAccordion => Browser.FindElementByCssSelector(".expanded");
+
         private IWebElement AboutXenetaHeading => Browser.FindElementByXPath("//div[contains(@class, 'expanded')]//h4/span[text()='About Xeneta']");
 
         private IWebElement ResponsibilitiesHeading => Browser.FindElementByXPath("//div[contains(@class, 'expanded')]//h4/span[text()='What will you be doing']");
@@ -35,7 +37,7 @@ namespace XenetaWebApp.UITests.Pages
 
         private IWebElement ApplyLink => Browser.FindElementByCssSelector("div.expanded a");
 
-        private IList<IWebElement> JobDetailsAccordion => Browser.FindElementsByCssSelector("div.expanded p");
+        private IList<IWebElement> JobDetailsAccordionContent => Browser.FindElementsByCssSelector("div.expanded p");
 
         public void NavigateTo()
         {
@@ -54,6 +56,20 @@ namespace XenetaWebApp.UITests.Pages
 
         public bool IsJobDescriptionDisplayed()
         {
+            WebDriverWait WaitForAccordionToExpand = new WebDriverWait(Browser, TimeSpan.FromSeconds(5));
+
+            try
+            {
+                WaitForAccordionToExpand.Until(b =>
+                {
+                    return JobDetailsAccordion.Displayed;
+                });
+            }
+            catch (WebDriverTimeoutException)
+            {
+                return false;
+            }
+
             bool isJobDesciptionDisplayed =
                 IsJobDescriptionContentDisplayed(AboutXenetaHeading, CareersPageTestData.AboutUsDetails) &&
                 IsJobDescriptionContentDisplayed(ResponsibilitiesHeading, CareersPageTestData.ResponsibilitiesDetails) &&
@@ -74,7 +90,7 @@ namespace XenetaWebApp.UITests.Pages
             }
             foreach (string paragraph in jobDescriptionContentDetails)
             {
-                if (JobDetailsAccordion.Single(paragraphElement => paragraphElement.Text.Contains(paragraph)).Displayed.Equals(false))
+                if (JobDetailsAccordionContent.Single(paragraphElement => paragraphElement.Text.Contains(paragraph)).Displayed.Equals(false))
                 {
                     return false;
                 }
