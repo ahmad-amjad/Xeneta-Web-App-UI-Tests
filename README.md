@@ -62,9 +62,10 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 7. Use Solution Explorer to view the project files
 8. The tests are structured as:
     * Feature Files contain Scenarios(tests) -> Scenarios contain Steps -> Steps map to Step Definition methods -> Step Definition methods use Page Object classes
-9. Use Test Explorer on left menu to view all features and their tests
-10. You can start a test run by:
+9. Open *Test* explorer tab on left menu and reload tests. Do this after evey build
+10. Use Test Explorer to view all features and their tests
+11. You can start a test run by:
     * Running all tests of all Features
     * Running all tests of a particular Feature
     * Running a particular test of a particular Feature
-11. 'OUTPUT' tab at the bottom will display the failed assertions if any tests fail
+12. 'OUTPUT' tab at the bottom will display the failed assertions if any tests fail
