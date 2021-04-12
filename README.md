@@ -5,7 +5,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 * Automated UI Tests for some features of Xeneta's Website using .Net Core, Selenium, Specflow and Nunit
 * Runs with current chrome version: 89.0.4389.114 
 * Selenium.WebDriver.ChromeDriver package can be updated for future chrome verisons via Nuget Manager in Visual Studio 2019
-* Target framework version for the project is .Net Core 2.1
+* Target framework version for the project is .Net Core 3.1
 
 # Project Structure/Flow
 1. The tests are defined using Gherkin Syntax in *Feature* files (extenseion: .features) located in *Features* folder
@@ -44,7 +44,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 
 ## Visual Studio Code on Windows or Mac
 ##### *Note: Visual Studio 2019 offers better Project Files View and SpecFlow Integration*
-1. Download and Install latest *'.Net Core 2.1 SDK'* from: https://dotnet.microsoft.com/download/dotnet/2.1
+1. Download and Install latest *'.Net Core 3.1 SDK'* from: https://dotnet.microsoft.com/download/dotnet/3.1
 2. Open visual Studio Code and install following extensions from *Extensions* tab on left menu:
     * C#
     * vscode-solution-explorer
