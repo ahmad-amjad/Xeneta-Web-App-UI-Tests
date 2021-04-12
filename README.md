@@ -43,21 +43,26 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 
 ## Visual Studio Code on Windows or Mac
 #### Visual Studio 2019 offers better Project Files View and SpecFlow Integration
-1. Open visual Studio Code and install following extensions:
+1. Download and Install latest *'.Net Core 2.1 SDK'* from: https://dotnet.microsoft.com/download/dotnet/2.1
+2. Open visual Studio Code and install following extensions:
     * C# by Microsoft
     * vscode-solution-explorer
     * Specflow Tools
-    * .Net Core Test Explorer by Derivitec Ltd
-2. Restart Visual Studio Code if Prompted
+    * .Net Core Test Explorer (by Derivitec Ltd)
 3. Click File then click Open and select Solution folder named *'XenetaWebApp.Tests'*
-4. Build the solution:
+4. Visual Studio Code will automatically resolve some dependencies like:
+   * OmniSharp for Windows
+   * .Net Core Debugger
+   * Razor Language Server
+5. Visual Studio Code may show a message to restore C# dependency. Click resotre
+6. Build the solution:
     * For Windows: Ctrl + Shift + B
     * For Mac: Cmd + B
-5. Use Solution Explorer to view the project files
-6. The tests are structured as:
+7. Use Solution Explorer to view the project files
+8. The tests are structured as:
     * Feature Files contain Scenarios(tests) -> Scenarios contain Steps -> Steps map to Step Definition methods -> Step Definition methods use Page Object classes
-7. Use Test Explorer on left menu to view all features and their tests
-8. You can start a test run by:
+9. Use Test Explorer on left menu to view all features and their tests
+10. You can start a test run by:
     * Running all tests of all Features
     * Running all tests of a particular Feature
     * Running a particular test of a particular Feature
