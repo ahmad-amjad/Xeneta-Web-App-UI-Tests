@@ -27,8 +27,8 @@ namespace XenetaWebApp.UITests.Steps
             Pages.CareersPage.OpenJobDescription();
         }
 
-        [When(@"I click on the title a job")]
-        public void WhenIClickOnTheTitleAJob()
+        [When(@"I click on the title of a job")]
+        public void WhenIClickOnTheTitleOfAJob()
         {
             Pages.CareersPage.OpenJobDescription();
         }
@@ -36,7 +36,7 @@ namespace XenetaWebApp.UITests.Steps
         [Then(@"Details of the job should be displayed")]
         public void ThenDetailsOfTheJobShouldBeDisplayed()
         {
-            Assert.IsTrue(Pages.CareersPage.IsJobDescriptionDisplayed());
+            Assert.IsTrue(Pages.CareersPage.IsJobDescriptionDisplayed(), "Details of the job were not displayed.");
         }
 
         [When(@"I click the link to apply for the job")]
@@ -45,10 +45,10 @@ namespace XenetaWebApp.UITests.Steps
             Pages.CareersPage.OpenJobApplication();
         }
 
-        [Then(@"I should be navigated the jobs application page")]
-        public void ThenIShouldBeNavigatedTheJobsApplicationPage()
+        [Then(@"I should be navigated to the job application page")]
+        public void ThenIShouldBeNavigatedToTheJobApplicationPage()
         {
-            Assert.IsTrue(Pages.JobApplicationPage.IsAt());
+            Assert.IsTrue(Pages.JobApplicationPage.IsAt(), "User was not navigated to the Job Application page.");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using NUnit.Framework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using System;
@@ -30,7 +31,7 @@ namespace XenetaWebApp.UITests.Steps
         [Then(@"I should be navigated to the demo videos page")]
         public void ThenIShouldBeNavigatedToTheDemoVideosPage()
         {
-            Pages.DemoVideosPage.IsAt();
+            Assert.IsTrue(Pages.DemoVideosPage.IsAt(), "User was not navigated to the Demo Videos page.");
         }
     }
 }

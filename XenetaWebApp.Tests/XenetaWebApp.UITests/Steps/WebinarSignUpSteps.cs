@@ -30,7 +30,7 @@ namespace XenetaWebApp.UITests.Steps
         [Then(@"I should be navigated to the webinar signup thank you page")]
         public void ThenIShouldBeNavigatedToTheWebinarSignupThankYouPage()
         {
-            Assert.IsTrue(Pages.WebinarSignUpThankYouPage.IsAt());
+            Assert.IsTrue(Pages.WebinarSignUpThankYouPage.IsAt(), "User was not navigated to the Webinar Sign Up Thank You page.");
         }
     }
 }

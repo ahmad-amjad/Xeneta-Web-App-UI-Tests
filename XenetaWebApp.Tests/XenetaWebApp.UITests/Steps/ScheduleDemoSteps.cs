@@ -58,8 +58,8 @@ namespace XenetaWebApp.UITests.Steps
             Pages.DemoPage.PhoneNumber = phoneNumber;
         }
 
-        [Given(@"I set meeting date to '(.*)'")]
-        public void GivenISetMeetingDateTo(string meetingDate)
+        [Given(@"I set a meeting date for '(.*)'")]
+        public void GivenISetAMeetingDateFor(string meetingDate)
         {
             Pages.DemoPage.MeetingDate = meetingDate;
         }
@@ -70,8 +70,8 @@ namespace XenetaWebApp.UITests.Steps
             Pages.DemoPage.MeetingTime = meetingTime;
         }
 
-        [Given(@"I enter a job title as '(.*)'")]
-        public void GivenIEnterAJobTitleAs(string jobTitle)
+        [Given(@"I enter a job title of '(.*)'")]
+        public void GivenIEnterAJobTitleOf(string jobTitle)
         {
             Pages.DemoPage.JobTitle = jobTitle;
         }
@@ -116,13 +116,15 @@ namespace XenetaWebApp.UITests.Steps
         [Then(@"I should see a thank you message confirming my booking for a demo")]
         public void ThenIShouldSeeAThankYouMessageConfirmingMyBookingForADemo()
         {
-            Assert.AreEqual("Thank you for your interest in Xeneta! Please check your inbox and set your date and time on the calendar. Happy shipping! ", Pages.DemoPage.DemoBookingConfirmationMessage);
+            Assert.AreEqual("Thank you for your interest in Xeneta!" +
+                " Please check your inbox and set your date and time on the calendar." +
+                " Happy shipping! ", Pages.DemoPage.DemoBookingConfirmationMessage, "Demo schedule confirmation message was not displayed.");
         }
 
         [Then(@"I should be navigated to the privacy policy page")]
         public void ThenIShouldBeNavigatedToThePrivacyPolicyPage()
         {
-            Assert.IsTrue(Pages.PrivacyPolicyPage.IsAt());
+            Assert.IsTrue(Pages.PrivacyPolicyPage.IsAt(), "User was not navigated to the Privacy Policy page.");
         }
 
         [Given(@"I don't agree to the privacy policy of Xeneta")]
@@ -134,7 +136,7 @@ namespace XenetaWebApp.UITests.Steps
         [Then(@"Application should not be submitted")]
         public void ThenApplicationShouldNotBeSubmitted()
         {
-            Assert.AreEqual("Please complete this required field.", Pages.DemoPage.PrivacyPolicyRequiredFieldValidationMessage);
+            Assert.AreEqual("Please complete this required field.", Pages.DemoPage.PrivacyPolicyRequiredFieldValidationMessage, "Application was not rejected.");
         }
 
     }
