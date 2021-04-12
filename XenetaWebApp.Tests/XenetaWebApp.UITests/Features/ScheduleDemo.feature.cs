@@ -120,13 +120,13 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I enter a phone number \'+1-541-754-3010\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
- testRunner.And("I set meeting date to \'today\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I set a meeting date for \'today\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 14
  testRunner.And("I enter a meeting time of \'14:30\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 15
- testRunner.And("I enter a job title as \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a job title of \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 16
  testRunner.And("I select that the company is a \'Shipper/BCO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -236,13 +236,13 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I enter a phone number \'+1-541-754-3010\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 35
- testRunner.And("I set meeting date to \'today\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I set a meeting date for \'today\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 36
  testRunner.And("I enter a meeting time of \'14:30\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 37
- testRunner.And("I enter a job title as \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a job title of \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 38
  testRunner.And("I select that the company is a \'Shipper/BCO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

@@ -117,7 +117,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I enter a business email of \'john.doe@joent.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 12
- testRunner.And("I enter a job title as \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a job title of \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
  testRunner.And("I select that the company is a \'Shipper/BCO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -224,7 +224,7 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("I enter a business email of \'john.doe@joent.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 31
- testRunner.And("I enter a job title as \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I enter a job title of \'CEO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 32
  testRunner.And("I select that the company is a \'Shipper/BCO\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
