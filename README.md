@@ -44,8 +44,8 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 ## Visual Studio Code on Windows or Mac
 #### Visual Studio 2019 offers better Project Files View and SpecFlow Integration
 1. Download and Install latest *'.Net Core 2.1 SDK'* from: https://dotnet.microsoft.com/download/dotnet/2.1
-2. Open visual Studio Code and install following extensions:
-    * C# by Microsoft
+2. Open visual Studio Code and install following extensions from Extensions tab on left menu:
+    * C#
     * vscode-solution-explorer
     * Specflow Tools
     * .Net Core Test Explorer (by Derivitec Ltd)
