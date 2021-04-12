@@ -40,6 +40,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
     * Run all tests of all Features
     * Run all tests of a particular Feature
     * Run a particular test of a particular Feature
+10. For any failed test select it in *Test Explorer* and click *Output* to see the failed assertion 
 
 ## Visual Studio Code on Windows or Mac
 #### Visual Studio 2019 offers better Project Files View and SpecFlow Integration
@@ -66,3 +67,4 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
     * Running all tests of all Features
     * Running all tests of a particular Feature
     * Running a particular test of a particular Feature
+11. 'OUTPUT' tab at the bottom will display the failed assertions if any tests fail
