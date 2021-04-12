@@ -1,0 +1,1 @@
+cmd /k "dotnet tool update --global SpecFlow.Plus.LivingDoc.CLI & livingdoc test-assembly XenetaWebApp.Tests\XenetaWebApp.Tests\bin\Debug\netcoreapp3.1\XenetaWebApp.Tests.dll -t XenetaWebApp.Tests\XenetaWebApp.Tests\bin\Debug\netcoreapp3.1\TestExecution.json --output TestRunReport.html"

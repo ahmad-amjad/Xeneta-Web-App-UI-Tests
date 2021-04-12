@@ -42,6 +42,10 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
     * Run a particular test of a particular Feature
 10. For any failed test select it in *Test Explorer* and click *Output* to see the failed assertion 
 
+### Generate Test Run Report (If using Windows)
+1. After test run, double click *GenerateReport.bat* located in repository's root folder *(Xeneta-Web-App-UI-Tests)* to generate *TestRunReport.html* report file
+2. *TestRunReport.html* is generated in repository's root folder *(Xeneta-Web-App-UI-Tests)*. Open the file to view Test Run statistics
+
 ## Visual Studio Code on Windows or Mac
 ##### *Note: Visual Studio 2019 offers better Project Files View and SpecFlow Integration*
 1. Download and Install latest *'.Net Core 3.1 SDK'* from: https://dotnet.microsoft.com/download/dotnet/3.1
@@ -69,3 +73,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
     * Running all tests of a particular Feature
     * Running a particular test of a particular Feature
 12. *OUTPUT* tab at the bottom will display the failed assertions if any tests fail
+
+### Generate Test Run Report (If using Windows)
+1. After test run, double click *GenerateReport.bat* located in repository's root folder *(Xeneta-Web-App-UI-Tests)* to generate *TestRunReport.html* report file
+2. *TestRunReport.html* is generated in repository's root folder *(Xeneta-Web-App-UI-Tests)*. Open the file to view Test Run statistics
