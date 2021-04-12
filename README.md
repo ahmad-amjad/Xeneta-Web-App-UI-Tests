@@ -43,7 +43,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 10. For any failed test select it in *Test Explorer* and click *Output* to see the failed assertion 
 
 ## Visual Studio Code on Windows or Mac
-#### Visual Studio 2019 offers better Project Files View and SpecFlow Integration
+##### *Note: Visual Studio 2019 offers better Project Files View and SpecFlow Integration*
 1. Download and Install latest *'.Net Core 2.1 SDK'* from: https://dotnet.microsoft.com/download/dotnet/2.1
 2. Open visual Studio Code and install following extensions from *Extensions* tab on left menu:
     * C#
@@ -59,7 +59,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
 6. Build the solution:
     * For Windows: Ctrl + Shift + B
     * For Mac: Cmd + B
-7. Use Solution Explorer to view the project files
+7. Use *Solution* Explorer tab on left menu to view the project files
 8. The tests are structured as:
     * Feature Files contain Scenarios(tests) -> Scenarios contain Steps -> Steps map to Step Definition methods -> Step Definition methods use Page Object classes
 9. Open *Test* Explorer tab on left menu and reload tests. Do this after evey build
