@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XenetaWebApp.UITests.Pages
+namespace XenetaWebApp.Tests.Pages
 {
-    public class WebinarSignUpThankYouPage
+    public class PrivacyPolicyPage
     {
         private readonly RemoteWebDriver Browser;
-        private const string PageUri = @"https://www.xeneta.com/xeneta-live-group-demo-thank-you-";
-        private const string PageTitle = "Xeneta Live Group Demo Thank You";
+        private const string PageUri = @"https://www.xeneta.com/xeneta-privacy-policy";
+        private const string PageTitle = "Xeneta Privacy Policy";
 
-        public WebinarSignUpThankYouPage(RemoteWebDriver browser) => Browser = browser;
+        public PrivacyPolicyPage(RemoteWebDriver browser) => Browser = browser;
 
         public bool IsAt()
         {

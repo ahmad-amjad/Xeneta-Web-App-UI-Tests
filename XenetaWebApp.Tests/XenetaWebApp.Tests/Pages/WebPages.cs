@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XenetaWebApp.UITests.Pages
+namespace XenetaWebApp.Tests.Pages
 {
     public class WebPages
     {

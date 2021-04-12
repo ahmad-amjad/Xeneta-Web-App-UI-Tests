@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium.Remote;
 
-namespace XenetaWebApp.UITests.Pages
+namespace XenetaWebApp.Tests.Pages
 {
     public class DemoPage
     {
@@ -57,6 +57,7 @@ namespace XenetaWebApp.UITests.Pages
 
         private IWebElement SubmitApplicationButton => Browser.FindElementByCssSelector("div.current input[type='submit']");
 
+        // The Xpath looks bad but it was the best possible one to locate this error label element without locating any of the other ones
         private IWebElement PrivacyPolicyRequiredFieldValidationLabel => Browser.FindElementByXPath("//input[@name='confirm_opt_in']/../../../../..//label[@class='hs-error-msg']");
 
         private IWebElement DemoBookingConfirmationMessagePartOneElement => Browser.FindElementByXPath("//div[contains(@class, 'submitted-message')]/p[contains(text(), '" + DemoBookingConfirmationMessageTextPartOne + "')]");

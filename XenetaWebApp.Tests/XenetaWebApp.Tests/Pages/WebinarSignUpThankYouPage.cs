@@ -7,14 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace XenetaWebApp.UITests.Pages
+namespace XenetaWebApp.Tests.Pages
 {
-    public class JobApplicationPage
+    public class WebinarSignUpThankYouPage
     {
         private readonly RemoteWebDriver Browser;
-        private const string PageUri = @"https://apply.workable.com/first-engineers";
+        private const string PageUri = @"https://www.xeneta.com/xeneta-live-group-demo-thank-you-";
+        private const string PageTitle = "Xeneta Live Group Demo Thank You";
 
-        public JobApplicationPage(RemoteWebDriver browser) => Browser = browser;
+        public WebinarSignUpThankYouPage(RemoteWebDriver browser) => Browser = browser;
 
         public bool IsAt()
         {
@@ -22,17 +23,12 @@ namespace XenetaWebApp.UITests.Pages
 
             try
             {
-                return WaitForPageToLoad.Until(b => b.Title.Contains(JobApplicationPageTestData.JobTitle));
+                return WaitForPageToLoad.Until(b => b.Title.Contains(PageTitle));
             }
             catch (WebDriverTimeoutException)
             {
                 return false;
             }
-        }
-
-        private static class JobApplicationPageTestData
-        {
-            public const string JobTitle = "Test Automation Engineer";
         }
     }
 }

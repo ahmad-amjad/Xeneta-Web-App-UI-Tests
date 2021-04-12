@@ -9,9 +9,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using TechTalk.SpecFlow;
-using XenetaWebApp.UITests.Pages;
+using XenetaWebApp.Tests.Pages;
 
-namespace XenetaWebApp.UITests.Hooks
+namespace XenetaWebApp.Tests.Hooks
 {
     [Binding]
     public sealed class WebDriverHooks

@@ -2,9 +2,9 @@
 using OpenQA.Selenium.Remote;
 using System;
 using TechTalk.SpecFlow;
-using XenetaWebApp.UITests.Pages;
+using XenetaWebApp.Tests.Pages;
 
-namespace XenetaWebApp.UITests.Steps
+namespace XenetaWebApp.Tests.Steps
 {
     [Binding]
     public class WebinarSignUpSteps

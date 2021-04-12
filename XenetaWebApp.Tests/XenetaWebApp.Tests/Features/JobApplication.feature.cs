@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace XenetaWebApp.UITests.Features
+namespace XenetaWebApp.Tests.Features
 {
     using TechTalk.SpecFlow;
     using System;
