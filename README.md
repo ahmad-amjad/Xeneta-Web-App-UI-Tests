@@ -54,7 +54,7 @@ Discussed in detail in document named **_'Functional Tests and Automation Criter
    * OmniSharp for Windows
    * .Net Core Debugger
    * Razor Language Server
-5. Visual Studio Code may show a message to restore C# dependency. Click resotre
+5. Visual Studio Code may show a message to restore C# dependency. Click restore
 6. Build the solution:
     * For Windows: Ctrl + Shift + B
     * For Mac: Cmd + B
