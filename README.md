@@ -1,5 +1,5 @@
 # Functional Checks and Automation Criteria
-Discussed in detail in document named **_'Functional Tests and Automation Criteria_'** within this repository
+Discussed in detail in document named [**_'Functional Tests and Automation Criteria_'**](https://github.com/ahmad-amjad/Xeneta-Web-App-UI-Tests/blob/main/Functional%20Tests%20and%20Automation%20Criteria.pdf) within this repository
 
 # Project Overview
 * Automated UI Tests for some features of Xeneta's Website using .Net Core, Selenium, Specflow and Nunit
